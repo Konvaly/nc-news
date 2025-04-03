@@ -4,3 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+
+.main-page-container {
+  border: solid 2px green;
+}
+
+.app-header {
+  border: solid 2px blue;
+}
