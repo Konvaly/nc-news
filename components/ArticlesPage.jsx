@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import ArticlesList from "./ArticlesList";
 
 const API_URL = 'https://nc-news-app-wyry.onrender.com/api/articles';
 
@@ -39,9 +40,8 @@ function ArticlesPage() {
     }
 
     return (
-        <div>
-            <h2>Articles</h2>
-            <pre>{JSON.stringify(articles, null, 2)}</pre>
+        <div className="articles-page">
+            <ArticlesList articles={articles} />
         </div>
     )
 }

@@ -6,9 +6,26 @@
 }
 
 .main-page-container {
-  border: solid 2px green;
+  margin: 10px;
+  border: solid green;
 }
 
 .app-header {
-  border: solid 2px blue;
+  margin: 10px;
+  border: solid blue;
+}
+
+.app-nav {
+  margin: 10px;
+  border: solid powderblue;
+}
+
+.articles-page {
+  margin: 10px;
+  border: solid yellow;
+}
+
+.articles-list {
+  margin: 10px;
+  border: solid pink;
 }
