@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.App {
+  margin: 10px;
+  border: solid lightskyblue;
+}
+
+/* MainPage*/
 .main-page-container {
   margin: 10px;
   border: solid green;
@@ -33,4 +39,36 @@
 .article-list-item {
   margin: 10px;
   border: solid palegreen;
+}
+
+/* SingleArticlePage */
+.single-article-page-container {
+  margin: 10px;
+  border: solid lightgreen;
+}
+
+.main-content {
+  margin: 10px;
+  border: solid lightcoral;
+}
+
+.single-article-details {
+  margin: 10px;
+  border: solid lightslategray;
+}
+
+.article-meta {
+  margin: 10px;
+  border: solid purple;
+}
+
+.single-article-image {
+  margin: 10px;
+  padding: 5px;
+  border: solid red;
+}
+
+.article-body {
+  margin: 10px;
+  border: solid yellowgreen;
 }
