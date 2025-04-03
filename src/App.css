@@ -61,3 +61,14 @@
   margin: 10px;
   border: solid purple;
 }
+
+.single-article-image {
+  margin: 10px;
+  padding: 5px;
+  border: solid red;
+}
+
+.article-body {
+  margin: 10px;
+  border: solid yellowgreen;
+}

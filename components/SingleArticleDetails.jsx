@@ -10,7 +10,7 @@ function SingleArticleDetails({ article }) {
                 dateStyle: 'long',
                 timeStyle: 'short'
             });
-            console.log("Original Date:", article.created_at, "-> Formatted:", formattedDate);
+
         } catch (dateError) {
             console.error("Error formatting date:", dateError);
         }
@@ -18,16 +18,28 @@ function SingleArticleDetails({ article }) {
         console.log("created_at field missing.");
     }
 
+    const hasImage = Boolean(article.article_img_url);
     return (
         <article className="single-article-details">
             <h1>{article.title}</h1>
+
+            {hasImage && (
+                <img
+                    className="single-article-image"
+                    src={article.article_img_url}
+                    alt={`Main visual content for article titled: ${article.title}`}
+                />
+            )}
+
+            <div className="article-body">
+                <p>{article.body}</p>
+            </div>
             <div className="article-meta">
                 <p>Author: {article.author}</p>
                 <p>Topic: {article.topic}</p>
+                <p>Posted: {formattedDate}</p>
                 <p>Votes: {article.votes}</p>
             </div>
-
-            <p>Article body placeholder...</p>
         </article>
     )
 }
