@@ -1,23 +1,21 @@
-function ArticlesList({ articles }) {
-    console.log("STEP 2 (List): Destructured articles ->", articles);
+import ArticlesListItem from "./ArticlesListItem";
 
+function ArticlesList({ articles }) {
+    if (!articles || articles.length === 0) {
+        return <p>No articles available at the moment.</p>
+    }
 
     return (
-        <div className="articles-list">
-            <p>Articles List</p>
-            <ul>
-                {articles.map((article) => {
-                    console.log("STEP 4 (List): Mapping article ->", article);
-                    return (
-                        <li key={article.article_id}>
-                            Article ID: {article.article_id} - {article.title}
-
-                        </li>
-                    )
-                })}
-
-            </ul>
-        </div>
+        <ul className="articles-list">
+            {articles.map((article) => {
+                return (
+                    <ArticlesListItem
+                        key={article.article_id}
+                        article={article}
+                    />
+                )
+            })}
+        </ul>
     )
 }
 
