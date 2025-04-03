@@ -4,3 +4,33 @@
   padding: 2rem;
   text-align: center;
 }
+
+.main-page-container {
+  margin: 10px;
+  border: solid green;
+}
+
+.app-header {
+  margin: 10px;
+  border: solid blue;
+}
+
+.app-nav {
+  margin: 10px;
+  border: solid powderblue;
+}
+
+.articles-page {
+  margin: 10px;
+  border: solid yellow;
+}
+
+.articles-list {
+  margin: 10px;
+  border: solid pink;
+}
+
+.article-list-item {
+  margin: 10px;
+  border: solid palegreen;
+}
