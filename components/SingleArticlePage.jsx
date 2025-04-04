@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleArticleDetails from "./SingleArticleDetails";
+import CommentsSection from "./CommentsSection";
 
 const API_BASE_URL = 'https://nc-news-app-wyry.onrender.com/api';
 
@@ -50,22 +51,26 @@ function SingleArticlePage() {
 
     }, [article_id])
 
-    let content = '';
+    let contentArticle = '';
     if (loading) {
-        content = <p>Loading article (ID: {article_id})...</p>
+        contentArticle = <p>Loading article (ID: {article_id})...</p>
     } else if (error) {
-        content = <p className="error-message">Error: {error}</p>
+        contentArticle = <p className="error-message">Error: {error}</p>
     } else if (article) {
-        content = <SingleArticleDetails article={article} />
+        contentArticle = <div>
+            <SingleArticleDetails article={article} />
+            <hr />
+            <CommentsSection article_id={article.article_id} />
+        </div>
     }
     else {
-        content = <p>Article data could not be loaded or was not in the expected format.</p>;
+        contentArticle = <p>Article data could not be loaded or was not in the expected format.</p>;
     }
 
     return (
         <div className="single-article-page-container">
             <main className="main-content">
-                {content}
+                {contentArticle}
             </main>
         </div>
     )
