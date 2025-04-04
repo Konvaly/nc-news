@@ -114,3 +114,24 @@
   margin: 10px;
   border: solid blueviolet;
 }
+
+/* CommentForm */
+.comment-form {
+  margin: 10px;
+  border: solid lightpink;
+}
+
+#new-comment-body {
+  margin: 10px;
+  border: solid rgb(255, 236, 182);
+}
+
+.posting-status {
+  margin: 10px;
+  border: solid green;
+}
+
+.error-message-post-error {
+  margin: 10px;
+  border: red;
+}

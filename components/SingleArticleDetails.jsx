@@ -111,7 +111,7 @@ function SingleArticleDetails({ article }) {
                         Vote Down {voteChange === -1 ? '(Voted)' : ''}
                     </button>
                     {isVoting && <p className="voting-status">Voting...</p>}
-                    {voteError && <p className="error-message vote-error">Error: {voteError}</p>}
+                    {voteError && <p className="error-message-vote-error">Error: {voteError}</p>}
                 </div>
             </div>
         </article>
