@@ -72,3 +72,28 @@
   margin: 10px;
   border: solid yellowgreen;
 }
+
+.comments-section {
+  margin: 10px;
+  border: solid gray;
+}
+
+/* .comments-section-error{
+  margin: 10px;
+  border: solid gray;
+} */
+
+.comment-list {
+  margin: 10px;
+  border: solid yellow;
+}
+
+.comment-card-placeholder {
+  margin: 10px;
+  border: solid lightseagreen;
+}
+
+.comment-card {
+  margin: 10px;
+  border: solid blueviolet;
+}
